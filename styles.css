@@ -1,0 +1,130 @@
+:root {
+    --bg-dark: #0b0f0d;
+    --green-dark: #1f3a2b;
+    --green-main: #2f6b55;
+    --green-accent: #a8e6a3;
+    --text-main: #e5f5ee;
+    --text-muted: #a0c7b7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #143a2a, var(--bg-dark));
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+a {
+    color: var(--green-accent);
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.nav img {
+    height: 40px;
+}
+
+.nav a {
+    margin-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.primary {
+    background: var(--green-accent);
+    color: #0b0f0d;
+}
+
+.secondary {
+    border: 1px solid var(--green-accent);
+}
+
+.links {
+    max-width: 500px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    padding: 1rem;
+    border: 1px solid var(--green-dark);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.content {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #0f1c16;
+    border: 1px solid var(--green-dark);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    border-radius: 6px;
+}
+
+.contact-form button {
+    background: var(--green-accent);
+    color: #0b0f0d;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
