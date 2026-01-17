@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | LayerMade Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="nav">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="LayerMade Lab Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content wide">
+        <h1>Shop LayerMade</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+            Hand-crafted 3D printed goods. <br>
+            Items marked "Etsy" ship immediately. "Direct" items are made to order via inquiry.
+        </p>
+
+        <div class="shop-grid">
+            <!-- Item 1: Etsy Link -->
+            <div class="shop-item">
+                <img src="images/placeholder-1.jpg" alt="Modern Planter">
+                <h3>Geometric Planter</h3>
+                <p class="price">$25.00</p>
+                <a href="https://layermadelab.etsy.com" target="_blank" class="btn primary">Buy on Etsy</a>
+            </div>
+
+            <!-- Item 2: Etsy Link -->
+            <div class="shop-item">
+                <img src="images/placeholder-2.jpg" alt="Headphone Stand">
+                <h3>Minimal Headphone Stand</h3>
+                <p class="price">$35.00</p>
+                <a href="https://layermadelab.etsy.com" target="_blank" class="btn primary">Buy on Etsy</a>
+            </div>
+
+            <!-- Item 3: Direct Sale (Inquiry) -->
+            <div class="shop-item">
+                <img src="images/placeholder-3.jpg" alt="Custom Nameplate">
+                <h3>Custom Nameplate</h3>
+                <p class="price">$45.00</p>
+                <a href="custom-orders.html?item=Custom%20Nameplate" class="btn secondary">Inquire to Order</a>
+            </div>
+
+            <!-- Item 4: Direct Sale (Inquiry) -->
+            <div class="shop-item">
+                <img src="images/placeholder-4.jpg" alt="Desk Organizer">
+                <h3>Modular Desk Organizer</h3>
+                <p class="price">$55.00</p>
+                <a href="custom-orders.html?item=Desk%20Organizer" class="btn secondary">Inquire to Order</a>
+            </div>
+
+            <!-- Custom Inquiry Tile -->
+            <div class="shop-item" style="border-style: dashed; background: transparent;">
+                <div
+                    style="flex-grow: 1; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--green-main);">
+                    +
+                </div>
+                <h3>Have a Custom Idea?</h3>
+                <p class="price" style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">We bring your
+                    designs to life.</p>
+                <a href="custom-orders.html" class="btn secondary">Start Custom Order</a>
+            </div>
+        </div>
+
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">All prices in CAD.
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2026 LayerMade Lab</p>
+    </footer>
+
+</body>
+
+</html>

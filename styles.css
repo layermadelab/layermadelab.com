@@ -33,7 +33,8 @@ a {
 }
 
 .nav img {
-    height: 40px;
+    height: 120px;
+    /* Increased from 60px */
 }
 
 .nav a {
@@ -97,6 +98,11 @@ a {
     padding: 0 2rem;
 }
 
+/* Wider content for Shop */
+.content.wide {
+    max-width: 1000px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -127,4 +133,85 @@ footer {
     text-align: center;
     padding: 2rem;
     color: var(--text-muted);
+}
+
+/* Shop Styles */
+.shop-grid {
+    display: grid;
+    /* Mobile: 2 columns */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /* Slightly smaller gap for mobile */
+    padding: 2rem 0;
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.shop-item {
+    background: #0f1c16;
+    border: 1px solid var(--green-dark);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.shop-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--green-main);
+}
+
+.shop-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #143a2a;
+    /* Placeholder bg */
+}
+
+.shop-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.shop-item .price {
+    font-size: 1.1rem;
+    color: var(--green-accent);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.shop-item .btn {
+    margin-top: auto;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Align Content Titles */
+.content h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Utility to center text */
+.text-center {
+    text-align: center;
+}
+
+/* Ensure textarea resize is vertical only */
+.contact-form textarea {
+    resize: vertical;
 }
